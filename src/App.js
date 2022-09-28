@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
@@ -9,20 +10,30 @@ function App() {
 	const increment = () => {
 		setCounter(counter + 1);
 	};
+	const decrement = () => {
+		setCounter(counter - 1);
+	};
 	return (
 		<>
-			<div>
-				<button>
-					<Link to="Home">Home</Link>
+			<div className="navbar">
+				<ul className="navbar__links">
+					<li>
+						<Link to="Home">Home</Link>
+					</li>
+					<li>
+						<Link to="About">About</Link>
+					</li>
+					<li>
+						<Link to="Contact">Contact</Link>
+					</li>
+				</ul>
+				<button className="nav-notification count">{counter}</button>
+				<button className="nav-notification add" onClick={increment}>
+					+
 				</button>
-				<button>
-					<Link to="About">About</Link>
+				<button className="nav-notification minus" onClick={decrement}>
+					-
 				</button>
-				<button>
-					<Link to="Contact">Contact</Link>
-				</button>
-				<button>{counter}</button>
-				<button onClick={increment}>+</button>
 			</div>
 			<UserContext.Provider value={counter}>
 				<Routes>

@@ -1,21 +1,60 @@
-.sqr {
-	background-color: gray;
-	color: aliceblue;
-	padding: 5px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-.p {
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	display: flex;
+	align-items: center;
+	width: 90%;
+}
+.navbar {
 	padding: 15px;
+	display: flex;
+	align-items: center;
+	background-color: antiquewhite;
 }
-.p button {
-	margin-inline-start: 15px;
-	padding: 5px;
+.navbar__links {
+	display: flex;
 }
-.font {
-	color: red;
-	font-size: 20px;
+.navbar__links li,
+.navbar button {
+	margin: 0 5px;
+}
+.counter {
+	padding: 0.625rem 0.75rem;
+	border: 0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	background-color: black;
+	color: #ffff;
+}
+.nav-notification {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	height: 1.25rem;
+	width: 1.25rem;
+	border: none;
+	color: #ffff;
+}
+.count {
+	background-color: cadetblue;
+}
+.add {
+	background-color: seagreen;
+}
+.minus {
+	background-color: red;
 }

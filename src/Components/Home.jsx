@@ -5,8 +5,10 @@ function Home() {
 	const msg = useContext(UserContext);
 	return (
 		<>
-			Home,
-			{msg}
+			<div className="container">
+				Home,
+				<span className="counter">{msg}</span>
+			</div>
 		</>
 	);
 }

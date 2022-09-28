@@ -5,7 +5,9 @@ function Contact() {
 	const counter = useContext(UserContext);
 	return (
 		<>
-			<h2>the counter is now: {counter}</h2>
+			<h2>
+				the counter is now: <span className="counter">{counter}</span>{" "}
+			</h2>
 		</>
 	);
 }
